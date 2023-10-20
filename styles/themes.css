@@ -5,6 +5,7 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
+
 :root.theme-dark {
   /*веса*/
   --title-font-weigth: 785;
@@ -12,22 +13,44 @@
   /*цвета*/
   --background-color: #000;
   --accent-color: #00cc14;
-
+  --button-text-focus-color: #00cc14;
+  /*фон*/
   --background-line-color: var(--background-color);
   --background-upper-color: #007f0c ;
   --background-lower-color: #004306;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    /*веса*/
+    --title-font-weigth: 785;
+    --text-font-weigth: 465;
+    /*цвета*/
+    --background-color: #000;
+    --accent-color: #00cc14;
+    --button-text-focus-color: #00cc14;
+    /*фон*/
+    --background-line-color: var(--background-color);
+    --background-upper-color: #007f0c ;
+    --background-lower-color: #004306;
+  }
+}
+
 :root.theme-light {
-    /*шрифты*/
+  /*шрифты*/
   --main-font: Inter-Variable, sans-serif; 
   --accent-font: PressStart2P, serif;
   /*веса*/
   --title-font-weigth: 700;
   --text-font-weigth: 400;
+  /**/
+  --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   /*цвета*/
   --background-color: #fff;
   --accent-color: #000;
+  --text-shadow-color: #fff;
+  --button-text-focus-color: #fff;
   /*фон*/
   --background-line-color: #d3d3d3;
   --background-upper-color: #e7e7e7;
@@ -36,4 +59,37 @@
     repeating-linear-gradient(90deg, var(--background-line-color) 0 2px, transparent 2px 4px),
     repeating-linear-gradient(180deg, var(--background-line-color) 0 2px, transparent 2px 4px),
     linear-gradient(var(--background-upper-color), var(--background-lower-color));
+  /*цвета сердца*/
+  --like-contour-color: var(--accent-color);
+  --like-fill-color: #ff0000;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /*шрифты*/
+    --main-font: Inter-Variable, sans-serif; 
+    --accent-font: PressStart2P, serif;
+    /*веса*/
+    --title-font-weigth: 700;
+    --text-font-weigth: 400;
+    /**/
+    --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    /*цвета*/
+    --background-color: #fff;
+    --accent-color: #000;
+    --text-shadow-color: #fff;
+    --button-text-focus-color: #fff;
+    /*фон*/
+    --background-line-color: #d3d3d3;
+    --background-upper-color: #e7e7e7;
+    --background-lower-color: #1a1a1a;
+    --background-image: 
+      repeating-linear-gradient(90deg, var(--background-line-color) 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(180deg, var(--background-line-color) 0 2px, transparent 2px 4px),
+      linear-gradient(var(--background-upper-color), var(--background-lower-color));
+    /*цвета сердца*/
+    --like-contour-color: var(--accent-color);
+    --like-fill-color: #ff0000;
+  }
 }
