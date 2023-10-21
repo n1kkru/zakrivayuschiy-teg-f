@@ -26,7 +26,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--text-font-weigth);
-  min-block-size: 668px;
   block-size: 100vh;
 }
 
@@ -176,7 +175,7 @@
   right: 11px;
   opacity: 0.5;
   font-family: var(--accent-font);
-
+  font-size: 14px;
   text-shadow:
     -2px 0 var(--text-shadow-color), 
     0 2px var(--text-shadow-color), 
