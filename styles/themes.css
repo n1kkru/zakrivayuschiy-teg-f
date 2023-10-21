@@ -38,7 +38,7 @@
 
 :root.theme-light {
   /*шрифты*/
-  --main-font: Inter-Variable, sans-serif; 
+  --main-font: Inter-Variable, sans-serif;
   --accent-font: PressStart2P, serif;
   /*веса*/
   --title-font-weigth: 700;
@@ -67,7 +67,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     /*шрифты*/
-    --main-font: Inter-Variable, sans-serif; 
+    --main-font: Inter-Variable, sans-serif;
     --accent-font: PressStart2P, serif;
     /*веса*/
     --title-font-weigth: 700;
