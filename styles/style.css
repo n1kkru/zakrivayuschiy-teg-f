@@ -51,8 +51,8 @@
 }
 
 .header__title a {
-  text-decoration: none;
   outline: none;
+  text-decoration: none;
 }
 
 .header__subtitle {
@@ -61,8 +61,8 @@
 }
 
 .theme-menu {
-  padding-inline-start: 0;
   display: inline-block;
+  padding-inline-start: 0;
 }
 
 .theme-menu__list {
@@ -76,8 +76,8 @@
 }
 
 .theme-menu__item {
-  padding-inline-start: 20px;
   margin-block: -2px;
+  padding-inline-start: 20px;
 }
 
 .button {
@@ -89,10 +89,10 @@
 }
 
 .theme-menu__button {
+  opacity: 1;
   font-size: 14px;
   text-align: start;
   text-transform: uppercase;
-  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
@@ -111,16 +111,16 @@
   content: '';
   position: absolute;
   background: var(--accent-color);
+  transition: inline-size 0.3s ease;
   inset-block-end: -3px;
   inset-inline-start: 1px;
   inline-size: 0%;
   block-size: 2px;
-  transition: inline-size 0.3s ease;
 }
 
 .theme-menu__button:focus-visible:enabled:before {
-  inline-size: 100%;
-  opacity: 0.6;  
+  opacity: 0.6;
+  inline-size: 100%;  
 }
 
 .theme-menu__button:enabled:hover {
@@ -168,8 +168,8 @@
 }
 
 .main__card-image-block {
-  display: flex;
   position: relative;
+  display: flex;
   border-block: 2px solid var(--accent-color, #000);
 }
 
@@ -177,6 +177,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
+  border-block: 2px soli var(--accent-color, #000);
   opacity: 0.5;
   font-family: var(--accent-font);
   font-size: 14px;
@@ -186,7 +187,6 @@
     2px 0 var(--text-shadow-color), 
     0 -2px var(--text-shadow-color);
   mix-blend-mode: hard-light;
-  border-block: 2px soli var(--accent-color, #000);
 }
 
 @supports((text-stroke: 1px var(--text-shadow-color)) 
@@ -201,9 +201,9 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
 .main__card-image {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 1/1;
 }
 
 .main__card-text {
@@ -225,9 +225,9 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
 
 /*сердечко*/
 .card__icon-button {
-  min-block-size: 38px;
   border: 2px solid transparent;
   padding-block-start: 5px;
+  min-block-size: 38px;
 }
 
 .card__icon-button:focus {
@@ -289,9 +289,9 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
 
 .button__text,
 .floppy {
-  mix-blend-mode: difference;
   color: var(--button-text-focus-color);
   transition: mix-blend-mode 0.5s ease-in-out;
+  mix-blend-mode: difference;
 }
 
 /*появление заливки при ховере*/
@@ -313,14 +313,13 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
   position: fixed;
   top: 50%;
   left: calc(50vw - 50%);
-  transform: translateY(-50%);
   border: 2px solid var(--accent-color);
   padding-block: 32px;
   color: inherit;
   font-family: var(--accent-font), fantasy;
   background: var(--background-color);
+  transform: translateY(-50%);
   max-inline-size: 357px;
-  /* min-block-size: 195px; */
 }
 
 .dialog[open] {
@@ -338,8 +337,8 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
 }
 
 .dialog-form {
-  inline-size: 100%;
   grid-column: span 2;
+  inline-size: 100%;
 }
 
 .dialog-button {
@@ -389,8 +388,8 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
 
   .save-button {
     flex-direction: column;
-    max-inline-size: 306px;
     padding-block: 8px;
+    max-inline-size: 306px;
   }
 
   .dialog {
