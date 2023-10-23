@@ -18,8 +18,12 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <p class="header__subtitle">закрывающий тег</p>
+      <h1 class="header__title">
+        <a href="#">
+          &lt;/HTML&gt;
+        </a>
+      </h1>
+      <h2 class="header__subtitle">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -60,9 +64,9 @@
             srcset="./images/image1-2x.jpg 2x"
             alt="Собака и два пирата. Пират в центре держит шляпу."
           >
-          <p class="main__card-image-watermark">
+          <span class="main__card-image-watermark">
             &lt;/HTML&gt;
-          </p>
+          </span>
         </div>
         <div class="main__card-text">
           <p>Это было самое начало пути. На этом этапе важно было 
@@ -139,9 +143,9 @@
             srcset="./images/image2-2x.jpg 2x"
             alt="Пират в шляпе держит указательный палец у виска"
           >
-          <p class="main__card-image-watermark">
+          <span class="main__card-image-watermark">
             &lt;/HTML&gt;
-          </p>
+          </span>
         </div>
         <div class="main__card-text">
           <p>На первых этапах мы работали со страхами и сомнениями, 
@@ -222,9 +226,9 @@
             srcset="./images/image3-2x.jpg 2x"
             alt="Доктор Ливси держит саблю"
           >
-          <p class="main__card-image-watermark">
+          <span class="main__card-image-watermark">
             &lt;/CSS&gt;
-          </p>
+          </span>
         </div>
         <div class="main__card-text">
           <p>Первый проект — позади! Но это всё ещё самое начало пути. 
@@ -304,9 +308,9 @@
             srcset="./images/image4-2x.jpg 2x"
             alt="Доктор Ливси держит бутылку с надписью CSS"
           >
-          <p class="main__card-image-watermark">
+          <span class="main__card-image-watermark">
             &lt;/desigions&gt;
-          </p>
+          </span>
         </div>
         <div class="main__card-text">
           <p>На этом этапе вы уже достаточно разбирались в основах 
@@ -388,9 +392,9 @@
             srcset="./images/image5-2x.jpg 2x"
             alt="Капитан Смоллетт, доктор Ливли и сквайр Трелони обсуждают план"
           >
-          <p class="main__card-image-watermark">
+          <span class="main__card-image-watermark">
             care
-          </p>
+          </span>
         </div>
         <div class="main__card-text">
           <p>Всё это время вы были не одиноки (хотя, возможно, иногда 
@@ -472,9 +476,9 @@
             srcset="./images/image6-2x.jpg 2x"
             alt="Джим встретился с адаптивом"
           >
-          <p class="main__card-image-watermark">
+          <span class="main__card-image-watermark">
             &lt;support&gt;
-          </p>
+          </span>
         </div>
         <div class="main__card-text">
           <p>На этом курсе вы постоянно решали разные задачи. 
@@ -553,9 +557,9 @@
             srcset="./images/image7-2x.jpg 2x"
             alt="Трелони, Джим, Смоллетт и Ливси поднимают мотивацию"
           >
-          <p class="main__card-image-watermark">
+          <span class="main__card-image-watermark">
             &lt;lifes-style: none;&gt;
-          </p>
+          </span>
         </div>
         <div class="main__card-text">
           <p>Во время учёбы часто возникает чувство, когда не знаешь, 
@@ -636,9 +640,9 @@
             srcset="./images/image8-2x.jpg 2x"
             alt="Джим, Ливси и Трелони идут"
           >
-          <p class="main__card-image-watermark">
+          <span class="main__card-image-watermark">
             &lt;experience&gt;
-          </p>
+          </span>
         </div>
         <div class="main__card-text">
           <p>Сейчас вы уже очень много знаете о вёрстке. Но это 
@@ -715,7 +719,12 @@
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
       >
-        <svg class="floppy" width="29" height="28">
+        <svg 
+          aria-hidden=“true” 
+          class="floppy" 
+          width="29" 
+          height="28"
+        >
           <use 
             class="floppys"
             xlink:href="./svg/floppy-figma.svg#floppy" 
@@ -723,10 +732,11 @@
           >
           </use>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text">Сохранить на&nbsp;память</span>
       </button>
       <!-- диалоговое окно -->
-      <dialog class="dialog" id="dialog-id">
+    </main>
+    <dialog class="dialog" id="dialog-id">
         <svg class="floppy" width="38" height="38">
           <use 
             class="floppys"
@@ -736,14 +746,15 @@
           </use>
         </svg>
         <p>Вставьте дискету, чтобы продолжить</p>
-        <button 
-          class="button button-effects dialog-button"
-          onclick="window['dialog-id'].close()"
-        >
-          <span class="button__text">ОК</span>
-        </button>
-      </dialog>
-    </main>
+        <form class="dialog-form" method="dialog" action="">
+          <button 
+            class="button button-effects dialog-button"
+            onclick="window['dialog-id'].close()"
+          >
+            <span class="button__text">ОК</span>
+          </button>
+        </form>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

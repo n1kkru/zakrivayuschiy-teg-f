@@ -2,7 +2,7 @@
 :root {
   /*шрифты*/
   --main-font: Inter-Variable, sans-serif;
-  --accent-font: PressStart2P, serif;
+  --accent-font: PressStart2P, fantasy;
   /*веса*/
   --title-font-weigth: 700;
   --text-font-weigth: 400;
