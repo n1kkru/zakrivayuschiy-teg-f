@@ -256,6 +256,7 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding-inline: 8px;
   margin: 0 auto;
   border: 2px solid var(--accent-color, #000);
   font-family: var(--accent-font);
@@ -352,6 +353,12 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
   text-transform: uppercase;
 }
 
+.dialog .floppy {
+  transform: scale(1.357);
+  transform-origin: 0 0;
+  align-self: center;
+}
+
 /*фильтры*/
 .filter-blur {
   filter: blur(0.1rem);
@@ -388,12 +395,13 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
 
   .save-button {
     flex-direction: column;
-    padding-block: 8px;
+    padding-block: 16px;
     max-inline-size: 306px;
   }
 
   .dialog {
-    max-inline-size: 85%;
+    max-inline-size: 90%;
+    padding: 32px 42px;
   }
 
   .floppy {
