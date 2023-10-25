@@ -321,6 +321,7 @@ or (-webkit-text-stroke: 1px var(--text-shadow-color))) {
   background: var(--background-color);
   transform: translateY(-50%);
   max-inline-size: 357px;
+  font-size: 14px;
 }
 
 .dialog[open] {
